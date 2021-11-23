@@ -42,7 +42,7 @@ nav {
 
 #midBox {
     text-align: center;
-    margin-top: 3%;
+    margin-top: 1.5%;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -61,6 +61,10 @@ nav {
 
 .quiz-container input {
     margin-right: 0.5%;
+}
+
+#first {
+    margin-left: 8%;
 }
 
 #submit-btn {
@@ -83,7 +87,7 @@ nav {
 }
 
 #output {
-    margin-top: 4%;
+    margin-top: 2%;
     font-size: 1.2rem;
 }
 

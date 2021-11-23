@@ -2,7 +2,7 @@ var submitButton = document.querySelector("#submit-btn");
 var outputText = document.querySelector("#output");
 var quizForm = document.querySelector(".quiz-form");
 
-var correctAns = ["90°", "right angled"];
+var correctAns = ["90°", "right angled", "one right angle", "90, 30, 60"];
 
 function checkScore() {
     let userScore = 0, index = 0;
@@ -10,7 +10,7 @@ function checkScore() {
 
     for(let ans of results.values()) {
        if(ans === correctAns[index]) {
-            userScore += 50;
+            userScore += 25;
        }
        index++;
     }
@@ -19,7 +19,15 @@ function checkScore() {
         outputText.style.color = "green";
         outputText.innerHTML = `<h2> Yay! All the answers are correct! <br> Your score: ${userScore} </h2>`;
     }
+    else if(userScore == 75) {
+        outputText.style.color = "green";
+        outputText.innerHTML = `<h2> Your score: ${userScore} 😊 </h2>`;
+    }
     else if(userScore == 50) {
+        outputText.style.color = "green";
+        outputText.innerHTML = `<h2> Your score: ${userScore} 😊 </h2>`;
+    }
+    else if(userScore == 25) {
         outputText.style.color = "green";
         outputText.innerHTML = `<h2> Your score: ${userScore} 😊 </h2>`;
     }
